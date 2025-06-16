@@ -14,6 +14,10 @@ Chiagoziem, Git, submitted
 Divine, Shell Navigation, not submitted
 Anissa, Shell Basics, submitted
 Keira, Git, not submitted
+Mary, Shell Basics, Not submitted
+Carine, Git, not submitted
+Desire, Shell Navigation, submitted
+Clark, Git, submitted
 EOF
 
 # Create config.env
