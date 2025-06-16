@@ -26,7 +26,6 @@ Main logic for checking submissions:
 ### `startup.sh`
 
 This is a launcher script. It runs the main reminder logic:
-```bash
 bash "$(dirname "$0")/app/reminder.sh"
 
 ### `functions.sh`
