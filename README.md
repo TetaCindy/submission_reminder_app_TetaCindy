@@ -5,9 +5,9 @@ It produces a reminder message, checks who hasn't turned in a specific assignmen
 
  create_environment.sh
 
-This script sets up the project structure:
+The project strucure is established by this script:
 
-- Creates folders and necessary scripts.
+- Create the required scripts and directories.
 - Writes core logic into:
   - `app/reminder.sh`
   - `startup.sh`
