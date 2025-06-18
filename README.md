@@ -1,41 +1,13 @@
-The purpose of this Bash-based project is to assist students in remembering to turn in their homework on time. 
-It produces a reminder message, checks who hasn't turned in a specific assignment, and reads from a list of submissions.
+This readme file is to explain how to run this application:
 
-## Scripts Explained
+       CREATE_ENVIRONMENT.SH
+To set up the application, open the terminal and navigate to the directory where the create_environment.sh is located. Then run the
+script using "bash create-environment.sh" Then Enter.
+The script will prompt you to enter your name and this will automatically create the directory will all the required files. Once 
+this is done, then run the startup.sh script that is inside the directory that was created. After running, the application will 
+then tell you the students that have yet to submit the shell navigation assignment.
 
- create_environment.sh
-
-The project strucure is established by this script:
-
-- Create the required scripts and directories.
-- Writes core logic into:
-  - `app/reminder.sh`
-  - `startup.sh`
-- Makes all `.sh` scripts executable.
-- Prints a confirmation message upon successful setup.
-
-### `reminder.sh`
-
-Main logic for checking submissions:
-
-- Loads config values from `config.env`.
-- Loads function definitions from `functions.sh`.
-- Displays the current assignment name and days remaining.
-- Calls the `check_submissions` function to display reminders for students who haven’t submitted their work.
-
-### `startup.sh`
-
-This is a launcher script. It runs the main reminder logic:
-bash "$(dirname "$0")/app/reminder.sh"
-
-### `functions.sh`
-Contains the logic used to check submission statuses
-This function is called by reminder.sh and reads from submissions.txt, skipping the header row because it contains only the
-structure of the content.
-
-### `config.env`
-keeps values that can be updated
-
-### `Copilot Shell Script`
-This script automatically re-runs the reminder logic with the updated assignment name after allowing the user to interactively 
-alter the assignment name used in the Submission Reminder App.
+     COPILOT_SHELL_SCRIPT
+Firstly, make sure you are in the right directory, then to run the copilot_shell_script.sh use " bash copilot_shell_script.sh"
+then it will prompt you to write a new assignment name you want to track then after running it it will then tell you the number of
+ students who are yet to  submit the assignmet you have entered.
